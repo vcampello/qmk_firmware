@@ -5,5 +5,4 @@
 run = '''git submodule update --init --recursive'''
 
 [tasks.setup-lsp]
-# install bear for this to work: https://github.com/rizsotto/Bear
-run = ["make clean", "bear -- qmk compile"]
+run = '''qmk compile --compiledb'''
